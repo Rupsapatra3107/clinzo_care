@@ -1,0 +1,15 @@
+clinzo-clone/
+│
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── api.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│
+├── server/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── .env
