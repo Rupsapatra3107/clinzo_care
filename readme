@@ -1,0 +1,164 @@
+# 🩺 Clinzo Care - Doctor Slot Scheduling System
+
+A full-stack MERN application that enables doctors to publish their availability and allows patients to book appointments online. The project demonstrates appointment scheduling, booking management, cancellation, and a clean, responsive user interface.
+
+---
+
+## 📌 Features
+
+### Doctor
+- Publish available appointment slots
+- View published availability
+- Manage appointment schedule
+
+### Patient
+- View available appointment slots
+- Book an appointment
+- Cancel an appointment
+- View booking status
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- React Router
+- Axios
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+- Mongoose
+
+---
+
+## 📁 Project Structure
+
+```
+clinzo_care/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
+│
+├── docs/
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🚀 Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/yourusername/clinzo_care.git
+```
+
+---
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | /api/appointments | Get all appointments |
+| POST | /api/appointments | Publish availability |
+| PUT | /api/appointments/:id/book | Book appointment |
+| PUT | /api/appointments/:id/cancel | Cancel appointment |
+
+---
+
+## 🗄️ Database Schema
+
+### Appointment
+
+```
+doctor
+patient
+date
+time
+booked
+createdAt
+updatedAt
+```
+
+---
+
+## 🏗️ Design Decisions
+
+- MERN stack architecture
+- RESTful API design
+- MongoDB for flexible document storage
+- React component-based UI
+- Separate frontend and backend for maintainability
+
+---
+
+## ⚙️ Assumptions
+
+- Each appointment slot belongs to one doctor.
+- A slot can only be booked by one patient.
+- Booked slots cannot be booked again.
+- All times are stored in the server's local timezone.
+- Authentication is not included in this implementation.
+
+---
+
+## ⚖️ Trade-offs
+
+- No authentication or authorization.
+- No payment integration.
+- No email or SMS notifications.
+- Uses basic CRUD operations for simplicity.
+
+---
+
+## 🚀 Future Improvements
+
+- User authentication (JWT)
+- Doctor profiles
+- Slot generation from start/end times
+- Buffer time between appointments
+- Rescheduling appointments
+- Real-time booking updates
+- Video consultation integration
+- Email and SMS reminders
+
+
+Backend Engineering Assessment Submission
